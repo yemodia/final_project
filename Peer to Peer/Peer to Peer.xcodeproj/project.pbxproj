@@ -16,6 +16,7 @@
 		18140C992289A520001B7EE0 /* Peer_to_PeerUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18140C982289A520001B7EE0 /* Peer_to_PeerUITests.swift */; };
 		18140CA72289AE82001B7EE0 /* CounselorsTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18140CA62289AE82001B7EE0 /* CounselorsTableViewController.swift */; };
 		18140CA92289B108001B7EE0 /* Counselor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18140CA82289B108001B7EE0 /* Counselor.swift */; };
+		184F07C2228DD8AB007DCB15 /* FreeBlockViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 184F07C1228DD8AB007DCB15 /* FreeBlockViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -51,6 +52,7 @@
 		18140C9A2289A520001B7EE0 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		18140CA62289AE82001B7EE0 /* CounselorsTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CounselorsTableViewController.swift; sourceTree = "<group>"; };
 		18140CA82289B108001B7EE0 /* Counselor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Counselor.swift; sourceTree = "<group>"; };
+		184F07C1228DD8AB007DCB15 /* FreeBlockViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FreeBlockViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -104,6 +106,7 @@
 				18140C782289A51D001B7EE0 /* AppDelegate.swift */,
 				18140C7A2289A51D001B7EE0 /* ViewController.swift */,
 				18140C7C2289A51D001B7EE0 /* Main.storyboard */,
+				184F07C1228DD8AB007DCB15 /* FreeBlockViewController.swift */,
 				18140CA62289AE82001B7EE0 /* CounselorsTableViewController.swift */,
 				18140CA82289B108001B7EE0 /* Counselor.swift */,
 				18140C7F2289A520001B7EE0 /* Assets.xcassets */,
@@ -262,6 +265,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				184F07C2228DD8AB007DCB15 /* FreeBlockViewController.swift in Sources */,
 				18140CA92289B108001B7EE0 /* Counselor.swift in Sources */,
 				18140C7B2289A51D001B7EE0 /* ViewController.swift in Sources */,
 				18140CA72289AE82001B7EE0 /* CounselorsTableViewController.swift in Sources */,

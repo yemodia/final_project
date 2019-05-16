@@ -9,7 +9,7 @@
 import UIKit
 
 class CounselorsTableViewController: UITableViewController {
-    let couselors = [Counselor(name: "Brian", free: "D")]
+    let counselors = [Counselor(name: "Kwame Boamah", free:"A"), Counselor(name: "Nahum Besha", free: "A"), Counselor(name: "Stephen Randall", free: "A"), Counselor(name: "Joel Euceda Warner", free: "A"), Counselor(name: "Fer Velazquez", free: "A"), Counselor(name: "Sara Topchik", free: "A"), Counselor(name: "Donnie Harris", free: "A"), Counselor(name: "Scout Crooke", free: "A"), Counselor(name: "Myan Wang", free: "A"), Counselor(name: "Lara Conway", free: "A"), Counselor(name: "Natalie Norman", free: "A") ]
     override func viewDidLoad() {
         super.viewDidLoad()
 
@@ -24,23 +24,26 @@ class CounselorsTableViewController: UITableViewController {
 
     override func numberOfSections(in tableView: UITableView) -> Int {
         // #warning Incomplete implementation, return the number of sections
-        return 0
+        return 1
     }
 
     override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         // #warning Incomplete implementation, return the number of rows
-        return 0
+       // print(counselors.count)
+        return counselors.count
     }
 
-    /*
+    
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        let cell = tableView.dequeueReusableCell(withIdentifier: "reuseIdentifier", for: indexPath)
+        let cell = tableView.dequeueReusableCell(withIdentifier: "Counselors", for: indexPath)
 
         // Configure the cell...
 
+        cell.textLabel?.text = counselors[indexPath.row].name
+        cell.detailTextLabel?.text = counselors[indexPath.row].free
         return cell
     }
-    */
+ 
 
     /*
     // Override to support conditional editing of the table view.
