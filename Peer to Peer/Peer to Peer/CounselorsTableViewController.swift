@@ -9,10 +9,11 @@
 import UIKit
 
 class CounselorsTableViewController: UITableViewController {
+    var freeBlock: String!
     let counselors = [Counselor(name: "Kwame Boamah", free:"A"), Counselor(name: "Nahum Besha", free: "A"), Counselor(name: "Stephen Randall", free: "A"), Counselor(name: "Joel Euceda Warner", free: "A"), Counselor(name: "Fer Velazquez", free: "A"), Counselor(name: "Sara Topchik", free: "A"), Counselor(name: "Donnie Harris", free: "A"), Counselor(name: "Scout Crooke", free: "A"), Counselor(name: "Myan Wang", free: "A"), Counselor(name: "Lara Conway", free: "A"), Counselor(name: "Natalie Norman", free: "A") ]
     override func viewDidLoad() {
         super.viewDidLoad()
-
+            print(freeBlock)
         // Uncomment the following line to preserve selection between presentations
         // self.clearsSelectionOnViewWillAppear = false
 
