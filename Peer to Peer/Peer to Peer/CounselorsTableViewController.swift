@@ -14,6 +14,10 @@ class CounselorsTableViewController: UITableViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
             print(freeBlock)
+        
+        var matchingFreeBlocks = []
+        if selected 
+        
         // Uncomment the following line to preserve selection between presentations
         // self.clearsSelectionOnViewWillAppear = false
 

@@ -11,6 +11,7 @@ import UIKit
 class FreeBlockViewController: UIViewController, UIPickerViewDataSource, UIPickerViewDelegate {
     @IBOutlet weak var CheckingLabel: UILabel!
     @IBOutlet weak var FreePicker: UIPickerView!
+    var selected = ""
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -29,7 +30,7 @@ class FreeBlockViewController: UIViewController, UIPickerViewDataSource, UIPicke
         return freeBlocks.count
     }
     func pickerView(_ pickerView: UIPickerView, didSelectRow row: Int, inComponent component: Int) {
-        let selected = freeBlocks[row]
+        selected = freeBlocks[row]
         print(selected)
     }
     /*
@@ -55,6 +56,11 @@ class FreeBlockViewController: UIViewController, UIPickerViewDataSource, UIPicke
         // Get the new view controller using segue.destination.
         // Pass the selected object to the new view controller.
         
+        // get a reference to the second view controller
+        let secondViewController = segue.destination as! CounselorsTableViewController
+        
+        // set a variable in the second view controller with the String to pass
+        secondViewController.freeBlock = selected
     }
     
 

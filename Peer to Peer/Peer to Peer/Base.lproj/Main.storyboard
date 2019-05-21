@@ -74,6 +74,16 @@
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="fRW-Mh-ZWN">
+                                <rect key="frame" x="111" y="563" width="152" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Match Peer Counselor"/>
+                                <connections>
+                                    <segue destination="Pif-AC-7Gz" kind="popoverPresentation" popoverAnchorView="fRW-Mh-ZWN" id="lNn-Iw-QtH">
+                                        <popoverArrowDirection key="popoverArrowDirection" up="YES" down="YES" left="YES" right="YES"/>
+                                    </segue>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <viewLayoutGuide key="safeArea" id="tvD-RQ-plr"/>
@@ -149,4 +159,7 @@
             <point key="canvasLocation" x="24.800000000000001" y="133.5832083958021"/>
         </scene>
     </scenes>
+    <inferredMetricsTieBreakers>
+        <segue reference="lNn-Iw-QtH"/>
+    </inferredMetricsTieBreakers>
 </document>
