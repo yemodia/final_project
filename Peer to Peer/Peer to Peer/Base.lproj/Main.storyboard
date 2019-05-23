@@ -18,31 +18,41 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="SSFS Peer to Peer" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="pc9-j7-PQB">
-                                <rect key="frame" x="118" y="266" width="139" height="21"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <nil key="textColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="TtB-3Y-osk">
-                                <rect key="frame" x="121" y="484" width="134" height="30"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" title="All Peer Counselors"/>
-                                <connections>
-                                    <segue destination="Pif-AC-7Gz" kind="show" id="ObP-0S-1XH"/>
-                                </connections>
-                            </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Kxn-sj-nbg">
-                                <rect key="frame" x="118" y="408" width="139" height="30"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" title="Find Peer Counselor"/>
-                                <connections>
-                                    <segue destination="vd7-zR-lHl" kind="show" id="38m-XY-33w"/>
-                                </connections>
-                            </button>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="83" translatesAutoresizingMaskIntoConstraints="NO" id="waG-L3-c6S">
+                                <rect key="frame" x="110" y="209" width="155" height="249"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="SSFS Peer to Peer" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="pc9-j7-PQB">
+                                        <rect key="frame" x="0.0" y="0.0" width="155" height="23"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="19"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Kxn-sj-nbg">
+                                        <rect key="frame" x="0.0" y="106" width="155" height="30"/>
+                                        <state key="normal" title="Find Peer Counselor"/>
+                                        <connections>
+                                            <segue destination="vd7-zR-lHl" kind="show" id="38m-XY-33w"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="TtB-3Y-osk">
+                                        <rect key="frame" x="0.0" y="219" width="155" height="30"/>
+                                        <state key="normal" title="All Peer Counselors"/>
+                                        <connections>
+                                            <segue destination="Pif-AC-7Gz" kind="show" id="ObP-0S-1XH"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="249" id="Oba-So-VXw"/>
+                                    <constraint firstAttribute="width" constant="155" id="pUH-Av-Gwc"/>
+                                </constraints>
+                            </stackView>
                         </subviews>
                         <color key="backgroundColor" red="0.62717084875138451" green="0.91992480310355329" blue="0.47158996015819771" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="waG-L3-c6S" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="BFm-DP-nGm"/>
+                            <constraint firstItem="waG-L3-c6S" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="C4Y-mt-wgw"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
                     <navigationItem key="navigationItem" id="pI1-tS-VIk"/>
@@ -59,31 +69,38 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <pickerView contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="jQ3-8P-BwI">
-                                <rect key="frame" x="0.0" y="313" width="375" height="216"/>
-                                <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxY="YES"/>
-                                <connections>
-                                    <outlet property="dataSource" destination="vd7-zR-lHl" id="LzU-Cs-wHG"/>
-                                    <outlet property="delegate" destination="vd7-zR-lHl" id="yqR-Ty-Frn"/>
-                                </connections>
-                            </pickerView>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Select the block you wish to meet with Peer Couselor" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsLetterSpacingToFitWidth="YES" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="IaY-wG-BdQ">
-                                <rect key="frame" x="0.0" y="103" width="375" height="135"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="29"/>
-                                <nil key="textColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="fRW-Mh-ZWN">
-                                <rect key="frame" x="111" y="563" width="152" height="30"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" title="Match Peer Counselor"/>
-                                <connections>
-                                    <segue destination="Pif-AC-7Gz" kind="show" id="lNn-Iw-QtH"/>
-                                </connections>
-                            </button>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" spacing="54" translatesAutoresizingMaskIntoConstraints="NO" id="byM-O8-fVy">
+                                <rect key="frame" x="0.0" y="122" width="375" height="423.5"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Select the block you wish to meet with Peer Couselor" textAlignment="center" lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsLetterSpacingToFitWidth="YES" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="IaY-wG-BdQ">
+                                        <rect key="frame" x="12" y="0.0" width="351.5" height="69.5"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="29"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <pickerView contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="jQ3-8P-BwI">
+                                        <rect key="frame" x="27.5" y="123.5" width="320" height="216"/>
+                                        <connections>
+                                            <outlet property="dataSource" destination="vd7-zR-lHl" id="LzU-Cs-wHG"/>
+                                            <outlet property="delegate" destination="vd7-zR-lHl" id="yqR-Ty-Frn"/>
+                                        </connections>
+                                    </pickerView>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="fRW-Mh-ZWN">
+                                        <rect key="frame" x="111.5" y="393.5" width="152" height="30"/>
+                                        <state key="normal" title="Match Peer Counselor"/>
+                                        <connections>
+                                            <segue destination="Pif-AC-7Gz" kind="show" id="lNn-Iw-QtH"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                            </stackView>
                         </subviews>
                         <color key="backgroundColor" red="0.59601661227081437" green="1" blue="0.27649058211444866" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstAttribute="trailing" secondItem="byM-O8-fVy" secondAttribute="trailing" id="ACr-Lq-3IX"/>
+                            <constraint firstItem="byM-O8-fVy" firstAttribute="leading" secondItem="yrs-JZ-1fB" secondAttribute="leading" id="KtU-1m-f5A"/>
+                            <constraint firstItem="byM-O8-fVy" firstAttribute="centerY" secondItem="yrs-JZ-1fB" secondAttribute="centerY" id="iOy-41-g77"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="tvD-RQ-plr"/>
                     </view>
                     <connections>
