@@ -10,13 +10,20 @@ import UIKit
 
 class CounselorsTableViewController: UITableViewController {
     var freeBlock: String!
-    let counselors = [Counselor(name: "Kwame Boamah", free:"A"), Counselor(name: "Nahum Besha", free: "A"), Counselor(name: "Stephen Randall", free: "A"), Counselor(name: "Joel Euceda Warner", free: "A"), Counselor(name: "Fer Velazquez", free: "A"), Counselor(name: "Sara Topchik", free: "A"), Counselor(name: "Donnie Harris", free: "A"), Counselor(name: "Scout Crooke", free: "A"), Counselor(name: "Myan Wang", free: "A"), Counselor(name: "Lara Conway", free: "A"), Counselor(name: "Natalie Norman", free: "A") ]
+    var matchingFreeBlocks = [Counselor]()
+    let counselors = [Counselor(name: "Kwame Boamah", free:"B"), Counselor(name: "Nahum Besha", free: "C"), Counselor(name: "Stephen Randall", free: "E"), Counselor(name: "Joel Euceda Warner", free: "G"), Counselor(name: "Fer Velazquez", free: "C"), Counselor(name: "Sara Topchik", free: "D"), Counselor(name: "Donnie Harris", free: "E"), Counselor(name: "Scout Crooke", free: "F"), Counselor(name: "Myan Wang", free: "A"), Counselor(name: "Lara Conway", free: "A"), Counselor(name: "Natalie Norman", free: "A") ]
     override func viewDidLoad() {
         super.viewDidLoad()
             print(freeBlock)
-        
-        var matchingFreeBlocks = []
-        if selected 
+        if let free = freeBlock{
+            for block in counselors {
+                if free == block.free{
+                    matchingFreeBlocks.append(block)
+                }
+            }
+        } else{
+            matchingFreeBlocks = counselors
+        }
         
         // Uncomment the following line to preserve selection between presentations
         // self.clearsSelectionOnViewWillAppear = false
@@ -35,7 +42,7 @@ class CounselorsTableViewController: UITableViewController {
     override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         // #warning Incomplete implementation, return the number of rows
        // print(counselors.count)
-        return counselors.count
+        return matchingFreeBlocks.count
     }
 
     
@@ -44,8 +51,8 @@ class CounselorsTableViewController: UITableViewController {
 
         // Configure the cell...
 
-        cell.textLabel?.text = counselors[indexPath.row].name
-        cell.detailTextLabel?.text = counselors[indexPath.row].free
+        cell.textLabel?.text = matchingFreeBlocks[indexPath.row].name
+        cell.detailTextLabel?.text = matchingFreeBlocks[indexPath.row].free
         return cell
     }
  

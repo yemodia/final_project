@@ -79,13 +79,11 @@
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="Match Peer Counselor"/>
                                 <connections>
-                                    <segue destination="Pif-AC-7Gz" kind="popoverPresentation" popoverAnchorView="fRW-Mh-ZWN" id="lNn-Iw-QtH">
-                                        <popoverArrowDirection key="popoverArrowDirection" up="YES" down="YES" left="YES" right="YES"/>
-                                    </segue>
+                                    <segue destination="Pif-AC-7Gz" kind="show" id="lNn-Iw-QtH"/>
                                 </connections>
                             </button>
                         </subviews>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <color key="backgroundColor" red="0.59601661227081437" green="1" blue="0.27649058211444866" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <viewLayoutGuide key="safeArea" id="tvD-RQ-plr"/>
                     </view>
                     <connections>
@@ -96,7 +94,7 @@
             </objects>
             <point key="canvasLocation" x="1687.2" y="133.5832083958021"/>
         </scene>
-        <!--Counselors Table View Controller-->
+        <!--Title-->
         <scene sceneID="Kgr-iz-fZQ">
             <objects>
                 <tableViewController id="Pif-AC-7Gz" customClass="CounselorsTableViewController" customModule="Peer_to_Peer" customModuleProvider="target" sceneMemberID="viewController">
@@ -104,6 +102,7 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <color key="sectionIndexBackgroundColor" red="0.83216959239999999" green="0.98548370600000001" blue="0.47333085539999997" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <prototypes>
                             <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="Counselors" textLabel="GjK-d1-zcV" detailTextLabel="1Vv-q3-lG7" style="IBUITableViewCellStyleSubtitle" id="BPv-0H-i8G">
                                 <rect key="frame" x="0.0" y="28" width="375" height="44"/>
@@ -135,10 +134,11 @@
                             <outlet property="delegate" destination="Pif-AC-7Gz" id="8jo-nD-4dU"/>
                         </connections>
                     </tableView>
+                    <navigationItem key="navigationItem" title="Title" id="T0c-ne-YaB"/>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="jpp-Cp-vue" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2396" y="134"/>
+            <point key="canvasLocation" x="2722" y="134"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="LBv-ny-JmE">
