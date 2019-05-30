@@ -19,6 +19,7 @@ class FreeBlockViewController: UIViewController, UIPickerViewDataSource, UIPicke
         // Do any additional setup after loading the view.
     }
     let freeBlocks = ["A", "B", "C", "D", "E","F", "G"]
+    // This defines the bock period of each day at SSFS
     
     func numberOfComponents(in pickerView: UIPickerView) -> Int {
         return 1

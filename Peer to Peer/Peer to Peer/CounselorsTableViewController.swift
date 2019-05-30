@@ -11,10 +11,11 @@ import UIKit
 class CounselorsTableViewController: UITableViewController {
     var freeBlock: String!
     var matchingFreeBlocks = [Counselor]()
-    let counselors = [Counselor(name: "Kwame Boamah", free:"B"), Counselor(name: "Nahum Besha", free: "C"), Counselor(name: "Stephen Randall", free: "E"), Counselor(name: "Joel Euceda Warner", free: "G"), Counselor(name: "Fer Velazquez", free: "C"), Counselor(name: "Sara Topchik", free: "D"), Counselor(name: "Donnie Harris", free: "E"), Counselor(name: "Scout Crooke", free: "F"), Counselor(name: "Myan Wang", free: "A"), Counselor(name: "Lara Conway", free: "A"), Counselor(name: "Natalie Norman", free: "A") ]
+    let counselors = [Counselor(name: "Kwame Boamah", free:"B"), Counselor(name: "Nahum Besha", free: "C"), Counselor(name: "Stephen Randall", free: "E"), Counselor(name: "Joel Euceda Warner", free: "G"), Counselor(name: "Fer Velazquez", free: "C"), Counselor(name: "Sara Topchik", free: "D"), Counselor(name: "Donnie Harris", free: "E"), Counselor(name: "Scout Crooke", free: "F"), Counselor(name: "Myan Wang", free: "A"), Counselor(name: "Lara Conway", free: "A"), Counselor(name: "Natalie Norman", free: "A"), Counselor(name: "Qiang Lin", free: "C"), Counselor(name: "Allison Dixon", free: "D"), Counselor(name: "Byrdon Hollander", free: "B"), Counselor(name: "Moira McCudden", free: "G"), Counselor(name: "Mecca McCain", free: "A"), Counselor(name: "Maria Menjivar", free: "B"), Counselor(name: "Nahum Besha", free: "E"), Counselor(name: "Siege Harris", free: "A"), Counselor(name: "Gabb Strocko", free: "F"), Counselor(name: "Albert Wang", free: "G"), Counselor(name: "CJ (Catherine) Gale", free: "D"), Counselor(name: "Sebastian Goodman", free: "E"), Counselor(name: "Ayo Omakanwayne", free: "B")]
+    //  These are just mock free blocks, ad do not reflect their actual frees
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-            print(freeBlock)
         if let free = freeBlock{
             for block in counselors {
                 if free == block.free{

@@ -202,13 +202,16 @@
 				TargetAttributes = {
 					18140C742289A51D001B7EE0 = {
 						CreatedOnToolsVersion = 10.1;
+						LastSwiftMigration = 1020;
 					};
 					18140C882289A520001B7EE0 = {
 						CreatedOnToolsVersion = 10.1;
+						LastSwiftMigration = 1020;
 						TestTargetID = 18140C742289A51D001B7EE0;
 					};
 					18140C932289A520001B7EE0 = {
 						CreatedOnToolsVersion = 10.1;
+						LastSwiftMigration = 1020;
 						TestTargetID = 18140C742289A51D001B7EE0;
 					};
 				};
@@ -445,6 +448,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 5J8Z5PUMRK;
 				INFOPLIST_FILE = "Peer to Peer/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -452,7 +456,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = "org.ssfs.Peer-to-Peer";
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 4.2;
+				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Debug;
@@ -462,6 +466,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 5J8Z5PUMRK;
 				INFOPLIST_FILE = "Peer to Peer/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -469,7 +474,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = "org.ssfs.Peer-to-Peer";
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 4.2;
+				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Release;
@@ -488,7 +493,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = "org.ssfs.Peer-to-PeerTests";
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 4.2;
+				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Peer to Peer.app/Peer to Peer";
 			};
@@ -508,7 +513,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = "org.ssfs.Peer-to-PeerTests";
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 4.2;
+				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Peer to Peer.app/Peer to Peer";
 			};
@@ -527,7 +532,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = "org.ssfs.Peer-to-PeerUITests";
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 4.2;
+				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				TEST_TARGET_NAME = "Peer to Peer";
 			};
@@ -546,7 +551,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = "org.ssfs.Peer-to-PeerUITests";
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 4.2;
+				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				TEST_TARGET_NAME = "Peer to Peer";
 			};

@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="jdR-XS-MFS">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14490.70" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="jdR-XS-MFS">
     <device id="retina4_7" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14460.20"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14490.49"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
@@ -18,40 +18,46 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="83" translatesAutoresizingMaskIntoConstraints="NO" id="waG-L3-c6S">
-                                <rect key="frame" x="110" y="209" width="155" height="249"/>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="70" translatesAutoresizingMaskIntoConstraints="NO" id="waG-L3-c6S">
+                                <rect key="frame" x="83" y="222.5" width="209.5" height="222"/>
                                 <subviews>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="SSFS Peer to Peer" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="pc9-j7-PQB">
-                                        <rect key="frame" x="0.0" y="0.0" width="155" height="23"/>
-                                        <fontDescription key="fontDescription" type="system" pointSize="19"/>
-                                        <nil key="textColor"/>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="SSFS Peer to Peer" textAlignment="natural" lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="pc9-j7-PQB">
+                                        <rect key="frame" x="0.0" y="0.0" width="209.5" height="24"/>
+                                        <fontDescription key="fontDescription" name="Rockwell-Regular" family="Rockwell" pointSize="24"/>
+                                        <color key="textColor" red="1" green="0.14913141730000001" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Kxn-sj-nbg">
-                                        <rect key="frame" x="0.0" y="106" width="155" height="30"/>
-                                        <state key="normal" title="Find Peer Counselor"/>
+                                        <rect key="frame" x="0.0" y="94" width="209.5" height="29"/>
+                                        <fontDescription key="fontDescription" name="Rockwell-BoldItalic" family="Rockwell" pointSize="17"/>
+                                        <state key="normal" title="Find Peer Counselor">
+                                            <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        </state>
                                         <connections>
                                             <segue destination="vd7-zR-lHl" kind="show" id="38m-XY-33w"/>
                                         </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="TtB-3Y-osk">
-                                        <rect key="frame" x="0.0" y="219" width="155" height="30"/>
-                                        <state key="normal" title="All Peer Counselors"/>
+                                        <rect key="frame" x="0.0" y="193" width="209.5" height="29"/>
+                                        <fontDescription key="fontDescription" name="Rockwell-BoldItalic" family="Rockwell" pointSize="17"/>
+                                        <state key="normal" title="All Peer Counselors">
+                                            <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        </state>
                                         <connections>
                                             <segue destination="Pif-AC-7Gz" kind="show" id="ObP-0S-1XH"/>
                                         </connections>
                                     </button>
                                 </subviews>
                                 <constraints>
-                                    <constraint firstAttribute="height" constant="249" id="Oba-So-VXw"/>
-                                    <constraint firstAttribute="width" constant="155" id="pUH-Av-Gwc"/>
+                                    <constraint firstAttribute="height" constant="222" id="FmH-M2-21L"/>
+                                    <constraint firstAttribute="width" constant="209.5" id="emg-to-ENU"/>
                                 </constraints>
                             </stackView>
                         </subviews>
-                        <color key="backgroundColor" red="0.62717084875138451" green="0.91992480310355329" blue="0.47158996015819771" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <color key="backgroundColor" red="0.49887984991073608" green="0.67497330904006958" blue="0.9107016921043396" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
-                            <constraint firstItem="waG-L3-c6S" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="BFm-DP-nGm"/>
-                            <constraint firstItem="waG-L3-c6S" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="C4Y-mt-wgw"/>
+                            <constraint firstItem="waG-L3-c6S" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="P6T-VM-7VN"/>
+                            <constraint firstItem="waG-L3-c6S" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="lAt-JV-eMf"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
@@ -70,24 +76,28 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" spacing="54" translatesAutoresizingMaskIntoConstraints="NO" id="byM-O8-fVy">
-                                <rect key="frame" x="0.0" y="122" width="375" height="423.5"/>
+                                <rect key="frame" x="0.0" y="134" width="375" height="399"/>
                                 <subviews>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Select the block you wish to meet with Peer Couselor" textAlignment="center" lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsLetterSpacingToFitWidth="YES" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="IaY-wG-BdQ">
-                                        <rect key="frame" x="12" y="0.0" width="351.5" height="69.5"/>
-                                        <fontDescription key="fontDescription" type="system" pointSize="29"/>
-                                        <nil key="textColor"/>
+                                        <rect key="frame" x="2" y="0.0" width="371.5" height="44"/>
+                                        <fontDescription key="fontDescription" name="Rockwell-Regular" family="Rockwell" pointSize="22"/>
+                                        <color key="textColor" red="0.99999600649999998" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <pickerView contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="jQ3-8P-BwI">
-                                        <rect key="frame" x="27.5" y="123.5" width="320" height="216"/>
+                                        <rect key="frame" x="27.5" y="98" width="320" height="216"/>
+                                        <color key="tintColor" red="1" green="0.52120530610000004" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         <connections>
                                             <outlet property="dataSource" destination="vd7-zR-lHl" id="LzU-Cs-wHG"/>
                                             <outlet property="delegate" destination="vd7-zR-lHl" id="yqR-Ty-Frn"/>
                                         </connections>
                                     </pickerView>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="fRW-Mh-ZWN">
-                                        <rect key="frame" x="111.5" y="393.5" width="152" height="30"/>
-                                        <state key="normal" title="Match Peer Counselor"/>
+                                        <rect key="frame" x="76.5" y="368" width="222" height="31"/>
+                                        <fontDescription key="fontDescription" name="Rockwell-Bold" family="Rockwell" pointSize="19"/>
+                                        <state key="normal" title="Match Peer Counselor">
+                                            <color key="titleColor" red="1" green="0.14913141730000001" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        </state>
                                         <connections>
                                             <segue destination="Pif-AC-7Gz" kind="show" id="lNn-Iw-QtH"/>
                                         </connections>
@@ -95,7 +105,7 @@
                                 </subviews>
                             </stackView>
                         </subviews>
-                        <color key="backgroundColor" red="0.59601661227081437" green="1" blue="0.27649058211444866" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <color key="backgroundColor" red="0.7773093581199646" green="0.70631951093673706" blue="0.93366831541061401" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
                             <constraint firstAttribute="trailing" secondItem="byM-O8-fVy" secondAttribute="trailing" id="ACr-Lq-3IX"/>
                             <constraint firstItem="byM-O8-fVy" firstAttribute="leading" secondItem="yrs-JZ-1fB" secondAttribute="leading" id="KtU-1m-f5A"/>
@@ -111,7 +121,7 @@
             </objects>
             <point key="canvasLocation" x="1687.2" y="133.5832083958021"/>
         </scene>
-        <!--Title-->
+        <!--Counselors Table View Controller-->
         <scene sceneID="Kgr-iz-fZQ">
             <objects>
                 <tableViewController id="Pif-AC-7Gz" customClass="CounselorsTableViewController" customModule="Peer_to_Peer" customModuleProvider="target" sceneMemberID="viewController">
@@ -151,7 +161,7 @@
                             <outlet property="delegate" destination="Pif-AC-7Gz" id="8jo-nD-4dU"/>
                         </connections>
                     </tableView>
-                    <navigationItem key="navigationItem" title="Title" id="T0c-ne-YaB"/>
+                    <navigationItem key="navigationItem" id="T0c-ne-YaB"/>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="jpp-Cp-vue" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -177,6 +187,6 @@
         </scene>
     </scenes>
     <inferredMetricsTieBreakers>
-        <segue reference="lNn-Iw-QtH"/>
+        <segue reference="ObP-0S-1XH"/>
     </inferredMetricsTieBreakers>
 </document>
